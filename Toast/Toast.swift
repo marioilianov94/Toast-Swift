@@ -565,7 +565,7 @@ public extension UIView {
         case .center:
             return CGPoint(x: self.bounds.size.width / 2.0, y: self.bounds.size.height / 2.0)
         case .bottom:
-            return CGPoint(x: self.bounds.size.width / 2.0, y: (self.bounds.size.height - (toast.frame.size.height / 2.0)) - padding)
+            return CGPoint(x: self.bounds.size.width / 2.0, y: ((self.bounds.size.height - (toast.frame.size.height / 2.0)) - padding) - 35)
         }
     }
 }
@@ -633,7 +633,7 @@ public struct ToastStyle {
      is present, this is also used as the padding between the title and the message.
      Default is 10.0.
     */
-    public var verticalPadding: CGFloat = 10.0
+    public var verticalPadding: CGFloat = 15.0
     
     /**
      The corner radius. Default is 10.0.
